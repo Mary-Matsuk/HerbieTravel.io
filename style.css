@@ -148,7 +148,7 @@ section {
     }
 
     .country_list {
-        display: list-item;
+        display: list-item !important;
     }
 }
 #about {
