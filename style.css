@@ -29,7 +29,7 @@ nav {
 }
 
 .navCountry {
-   display: inline-flex;
+    display: inline-flex;
     text-align: center;
     justify-content: center;
 
@@ -71,7 +71,11 @@ h3 {
 p {
     text-align: justify;
 }
-
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 .dropdown:hover .dropdown-content {
     display: block;
     max-height: 35vh;
@@ -127,22 +131,36 @@ section {
 #about {
     padding-top: 150px;
 }
-.imgAbout .bas{
+
+.imgAbout {
+       position: relative;
+         overflow-x: hidden;
+}
+.imgAbout .bas {
     width: 100%;
     height: auto;
-    padding-right: 40px;
+    /*overflow: hidden;*/
+
 }
-.imgAbout .logo{
- width: 12%;
+
+.imgAbout .logo {
+    width: 27%;
     height: auto;
     position: absolute;
     left: 7%;
     top: 5%;
+    overflow: hidden;
 }
+
 section:nth-of-type(2n) {
     background-color: rgba(255, 255, 255, 0.25);
-
 }
+
+.section_background {
+    background-color: rgba(255, 255, 255, 0) !important;
+    padding-bottom: 0 !important;
+}
+
 
 /*section:last-of-type {*/
 /*    height: 100vh;*/
@@ -152,13 +170,15 @@ section:nth-of-type(2n) {
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 10px;
     padding: 40px 30px;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     box-shadow: 0 0 18px 2px rgba(0, 0, 0, .15);
-/*margin-bottom: 30px;*/
+    /*margin-bottom: 30px;*/
 }
-.section_country>div{
+
+.section_country > div {
     position: relative;
 }
+
 .active {
     /*color: lime;*/
     font-weight: 600;
@@ -298,122 +318,136 @@ section:nth-of-type(2n) {
     opacity: 1;
 }
 
-.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+.swiper-horizontal > .swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
     position: relative;
     left: unset;
     /* bottom: var(--swiper-scrollbar-bottom,4px); */
     top: 0;
     z-index: 50;
-    height: var(--swiper-scrollbar-size,4px);
-     width: 100% !important;
+    /*height: var(--swiper-scrollbar-size,4px);*/
+    width: 100% !important;
     margin-bottom: 8px;
 }
 
 
-
-
-#Czechia>div>div>div>.slideCity:nth-child(1) {
+#Czechia > div > div > div > .slideCity:nth-child(1) {
     background: url("img/ostrava.jpg") center no-repeat fixed;
     background-size: cover;
 }
 
-#Czechia>div>div>div>.slideCity:nth-child(2) {
+#Czechia > div > div > div > .slideCity:nth-child(2) {
     background: url("img/olomouc.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Czechia>div>div>div>.slideCity:nth-child(3) {
+
+#Czechia > div > div > div > .slideCity:nth-child(3) {
     background: url("img/Brno.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Czechia>div>div>div>.slideCity:nth-child(4) {
+
+#Czechia > div > div > div > .slideCity:nth-child(4) {
     background: url("img/Jihlava.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Czechia>div>div>div>.slideCity:nth-child(5) {
+
+#Czechia > div > div > div > .slideCity:nth-child(5) {
     background: url("img/Humpolec.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Czechia>div>div>div>.slideCity:nth-child(6) {
+
+#Czechia > div > div > div > .slideCity:nth-child(6) {
     background: url("img/Praha.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Czechia>div>div>div>.slideCity:nth-child(7) {
+
+#Czechia > div > div > div > .slideCity:nth-child(7) {
     background: url("img/Plzen.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Czechia>div>div>div>.slideCity:nth-child(8) {
+
+#Czechia > div > div > div > .slideCity:nth-child(8) {
     background: url("img/Praha.jpg") center no-repeat fixed;
     background-size: cover;
 }
 
 
-
-#Netherlands>div>div>div>.slideCity:nth-child(1) {
+#Netherlands > div > div > div > .slideCity:nth-child(1) {
     background: url("img/ostrava.jpg") center no-repeat fixed;
     background-size: cover;
 }
 
-#Netherlands>div>div>div>.slideCity:nth-child(2) {
+#Netherlands > div > div > div > .slideCity:nth-child(2) {
     background: url("img/olomouc.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Netherlands>div>div>div>.slideCity:nth-child(3) {
+
+#Netherlands > div > div > div > .slideCity:nth-child(3) {
     background: url("img/Brno.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Netherlands>div>div>div>.slideCity:nth-child(4) {
+
+#Netherlands > div > div > div > .slideCity:nth-child(4) {
     background: url("img/Jihlava.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Netherlands>div>div>div>.slideCity:nth-child(5) {
+
+#Netherlands > div > div > div > .slideCity:nth-child(5) {
     background: url("img/Humpolec.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Netherlands>div>div>div>.slideCity:nth-child(6) {
+
+#Netherlands > div > div > div > .slideCity:nth-child(6) {
     background: url("img/Praha.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Netherlands>div>div>div>.slideCity:nth-child(7) {
+
+#Netherlands > div > div > div > .slideCity:nth-child(7) {
     background: url("img/Plzen.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Netherlands>div>div>div>.slideCity:nth-child(8) {
+
+#Netherlands > div > div > div > .slideCity:nth-child(8) {
     background: url("img/Praha.jpg") center no-repeat fixed;
     background-size: cover;
 }
 
 
-
-#Austria>div>div>div>.slideCity:nth-child(1) {
+#Austria > div > div > div > .slideCity:nth-child(1) {
     background: url("img/ostrava.jpg") center no-repeat fixed;
     background-size: cover;
 }
 
-#Austria>div>div>div>.slideCity:nth-child(2) {
+#Austria > div > div > div > .slideCity:nth-child(2) {
     background: url("img/olomouc.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Austria>div>div>div>.slideCity:nth-child(3) {
+
+#Austria > div > div > div > .slideCity:nth-child(3) {
     background: url("img/Brno.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Austria>div>div>div>.slideCity:nth-child(4) {
+
+#Austria > div > div > div > .slideCity:nth-child(4) {
     background: url("img/Jihlava.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Austria>div>div>div>.slideCity:nth-child(5) {
+
+#Austria > div > div > div > .slideCity:nth-child(5) {
     background: url("img/Humpolec.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Austria>div>div>div>.slideCity:nth-child(6) {
+
+#Austria > div > div > div > .slideCity:nth-child(6) {
     background: url("img/Praha.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Austria>div>div>div>.slideCity:nth-child(7) {
+
+#Austria > div > div > div > .slideCity:nth-child(7) {
     background: url("img/Plzen.jpg") center no-repeat fixed;
     background-size: cover;
 }
-#Austria>div>div>div>.slideCity:nth-child(8) {
+
+#Austria > div > div > div > .slideCity:nth-child(8) {
     background: url("img/Praha.jpg") center no-repeat fixed;
     background-size: cover;
 }
