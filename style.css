@@ -130,7 +130,19 @@ section {
     }
 
 }
-
+@media (max-width: 991.98px) {
+      .navCountry {
+    display: flex;
+    padding: 0 !important;
+          justify-content: start;
+}
+    .navbar-collapse{
+        padding-top: 20px;
+    }
+.dropdown-menu {
+    display: none !important;
+}
+}
 #about {
     padding-top: 150px;
 }
