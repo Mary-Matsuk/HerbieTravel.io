@@ -121,14 +121,14 @@ section {
         transform: translate(-50%);
         bottom: 0 !important;
         top: unset !important;
+                right: unset !important;
+
     }
 
     .animated {
         border-radius: 10px 10px 0 0 !important;
     }
-    .phone{
-        right: unset;
-    }
+
 }
 
 #about {
