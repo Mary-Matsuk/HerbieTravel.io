@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<div class="header">
+    <nav class="navbar navbar-expand-lg fixed-top navigation ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="logo" src="img/logo.svg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
+                <a class="nav-link m-auto px-5 navCountry" href="#about">
+                    Про&nbsp;нас
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown navCountry">
+                        <a class="nav-link " href="#Czechia">
+                            Чехія
+                        </a>
+                        <ul class="dropdown-menu dropdown-content">
+                            <li class="dropdown-item">Острава</li>
+                            <li class="dropdown-item">Оломоуц</li>
+                            <li class="dropdown-item">Брно</li>
+                            <li class="dropdown-item">Їглава</li>
+                            <li class="dropdown-item">Гумполец</li>
+                            <li class="dropdown-item">Прага</li>
+                            <li class="dropdown-item">Рокицани</li>
+                            <li class="dropdown-item">Плзень</li>
+                            <li class="dropdown-item">Літомишль</li>
+                            <li class="dropdown-item">Високе Мито</li>
+                            <li class="dropdown-item">Пардубице</li>
+                            <li class="dropdown-item">Градец-Кралове</li>
+                            <li class="dropdown-item">Млада-Болеслав</li>
+                            <li class="dropdown-item">Ліберец</li>
+                            <li class="dropdown-item">Усті-над-Лабем</li>
+                            <li class="dropdown-item">Тепліце</li>
+                            <li class="dropdown-item">Мост</li>
+                            <li class="dropdown-item">Хомутов</li>
+                            <li class="dropdown-item">Карлові-Вари</li>
+                            <li class="dropdown-item">Хеб</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown navCountry">
+                        <a class="nav-link " href="#Netherlands">
+                            Нідерланди
+                        </a>
+                        <ul class="dropdown-menu dropdown-content">
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown navCountry">
+                        <a class="nav-link " href="#Belgium">
+                            Бельгія
+                        </a>
+                        <ul class="dropdown-menu dropdown-content">
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown navCountry">
+                        <a class="nav-link " href="#Slovakia">
+                            Словаччина
+                        </a>
+                        <ul class="dropdown-menu dropdown-content">
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown navCountry">
+                        <a class="nav-link " href="#Austria">
+                            Австрія
+                        </a>
+                        <ul class="dropdown-menu dropdown-content">
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown navCountry">
+                        <a class="nav-link " href="#products">
+                            Люксембург
+                        </a>
+                        <ul class="dropdown-menu dropdown-content">
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown navCountry">
+                        <a class="nav-link " href="#products">
+                            Польща
+                        </a>
+                        <ul class="dropdown-menu dropdown-content">
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown navCountry">
+                        <a class="nav-link " href="#products">
+                            Італія
+                        </a>
+                        <ul class="dropdown-menu dropdown-content">
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown navCountry">
+                        <a class="nav-link " href="#products">
+                            Німеччина
+                        </a>
+                        <ul class="dropdown-menu dropdown-content">
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                            <li class="dropdown-item">місто</li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="main-content">
+    <div class="phone">
+        <div class="animated pulse"><a href="tel:+068 663 3513">+38 (068) 663 3513</a></div>
+    </div>
+    <section id="about" class="d-flex">
+
+        <div class="imgAbout col-md-4 col-sm-12">
+            <img class="bas" src="img/bas.png" alt="img">
+            <img class="logo" src="img/logo.svg" alt="img">
+
+        </div>
+        <div class="textAbout">
+             <h1>Про нас </h1>
+            <p><span>Herby Travel</span> - швидке бронювання автобусних квитків на міжнародні рейси!</p>
+        <p>Більша частина нашого життя проходить за роботою, сімейними або побутовими справами. Озираючись назад, ми
+            розуміємо, що багато часу витратили на те, щоб заробити гроші, отримати освіту, виростити дітей. І якщо
+            не міняти обстановку і постійно перебувати в однотипній атмосфері, можна втратити себе і втратити
+            інтерес до життя.</p>
+        <p>Подорожі допомагають нам відпочити від побуту, забути про роботу, струсити з себе стрес і проблеми, а
+            також переоцінити своє життя. Відвідуючи інші країни або міста, відпочиваючи на курортах, плескаючись в
+            теплому морі, ми по-новому оцінюємо світ, а також краще пізнаємо себе. Лише в подорожах виходить
+            повністю розслабитися, відкритися і впорядкувати свої думки.</p>
+        <p>Наші послуги допоможуть Вам знайти ідеальний варіант подорожі з мімальними витратами часу та грошей. Ми
+            постійно вдосконалюємо наш сервіс відповідно до Ваших потреб, а тому Ви можете відчувати впевненість на
+            кожному з етапів, розпочинаючи подорож автобусом. Саме з нами у Вас є можливість забронювати квиток з
+            будь-якого куточка України до країн Європи, а саме : Польщі, Чехії, Німеччини, Нідерландів, Італії ,
+            Іспанії та Франції.</p>
+        </div>
+
+
+    </section>
+    <section>
+        <h3>Для чого потрібні наші послуги?</h3>
+        <p><span>Herby Travel</span> працює з найкращими перевізниками України, а це дає Вам змогу знайти рейс саме
+            за Вашим
+            маршрутом та підібрати найкращий варіант.</p>
+        <ul>
+            <li>Забронювати квиток можна по вайберу, телеграмі, або просто зателефонувати, що значно економить Ваш
+                час і не потрібно бігати шумними автовокзалами та вистоювати довжелезні черги.
+            </li>
+            <li>Оплата квитка здійснюється при посадці у автобусі водію, наперед нічого оплачувати не потрібно.</li>
+            <li>Кращі ціни на квитки.</li>
+            <li>Зручні комфортабельні автобуси.</li>
+            <li>Інформаційна підтримка 24/7.</li>
+            <li>Знижки для дітей, постійних клієнтів та людей похилого віку.</li>
+            <li>Якісний сервіс – напередодні поїздки Ви отримуєте детальну інформацію , який саме автобус їхатиме.
+            </li>
+        </ul>
+
+        <h3>Основні напрямки</h3>
+        <ul class="country">
+            З любого куточка України до:
+            <li class="country_list">Польща</li>
+            <li class="country_list">Німеччина</li>
+            <li class="country_list">Чехія</li>
+            <li class="country_list">Італія</li>
+            <li class="country_list">Нідерланди</li>
+            <li class="country_list">Бельгія</li>
+            <li class="country_list">Словаччина</li>
+            <li class="country_list">Іспанія</li>
+        </ul>
+
+    </section>
+
+    <section id="Czechia">
+        <div class="section_country">
+            <h2>Чехія </h2>
+            <div class="swiper mySwiperCity">
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Острава</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Оломоуц</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Брно</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Їглава</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Гумполец</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Прага</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Рокицани</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Плзень</h4>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section id="Netherlands">
+        <div class="section_country">
+            <h2>Нідерланди </h2>
+
+            <div class="swiper mySwiperCity">
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Острава</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Оломоуц</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Брно</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Їглава</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Гумполец</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Прага</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Рокицани</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Плзень</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="Austria">
+        <div class="section_country">
+            <h2>Австрія </h2>
+
+            <div class="swiper mySwiperCity">
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Острава</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Оломоуц</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Брно</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Їглава</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Гумполец</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Прага</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Рокицани</h4>
+                    </div>
+                    <div class="swiper-slide slideCity">
+                        <div class="imgSlide"></div>
+                        <h4 class="textSlide">Плзень</h4>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <h3>Наші партнери</h3>
+        <!-- Swiper -->
+        <div class="swiper partners">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="client-item d-flex flex-wrap">
+                        <img src="img/winew.svg" alt="winew">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="client-item d-flex flex-wrap">
+                        <img src="img/turtrans.svg" alt="turtrans">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="client-item d-flex flex-wrap">
+                        <img src="img/tocobus.svg" alt="tocobus">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="client-item d-flex flex-wrap">
+                        <img src="img/svdtrans.svg" alt="svdtrans">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="client-item d-flex flex-wrap">
+                        <img src="img/naszbus.svg" alt="naszbus">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="client-item d-flex flex-wrap">
+                        <img src="img/myway.svg" alt="myway">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="client-item d-flex flex-wrap">
+                        <img src="img/modultrans.svg" alt="modultrans">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="client-item d-flex flex-wrap">
+                        <img src="img/luxreisen.svg" alt="luxreisen">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="client-item d-flex flex-wrap">
+                        <img src="img/ewe.svg" alt="ewe">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="client-item d-flex flex-wrap">
+                        <img src="img/caznatrans.svg" alt="caznatrans">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="client-item d-flex flex-wrap">
+                        <img src="img/bustrans.svg" alt="bustrans">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="js.js"></script>
+
+<script>
+
+</script>
+
+
+</html>

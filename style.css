@@ -1,0 +1,420 @@
+
+body, nav {
+    /*text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);*/
+    background: url("img/background.jpg") center no-repeat fixed;
+    background-size: cover;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+nav {
+    box-shadow: inset 0 0 5rem rgba(252, 215, 115, 0.5);
+    border-bottom: solid 2px white;
+    text-transform: uppercase;
+}
+
+.navbar-nav {
+    display: inline-block;
+}
+
+.dropdown-item {
+    text-transform: initial;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: unset;
+    text-decoration: none;
+    background-color: unset;
+}
+
+.navCountry {
+   display: inline-flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.logo {
+    height: 70px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    /*scroll-behavior: smooth;*/
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h1, h2 {
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h3, h4, h5, h6, span {
+    color: black;
+    font-weight: 600;
+
+}
+
+h3 {
+    padding-top: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    max-height: 35vh;
+    overflow-y: auto;
+    margin-top: 40px;
+    /*--bs-dropdown-border-radius: var(--bs-border-radius);*/
+}
+
+.dropdown-menu[data-bs-popper] {
+    margin-top: unset;
+}
+
+.main-content {
+    position: relative;
+}
+
+section {
+    /*background-color: #ec0000;*/
+    /*min-height: 98vh;*/
+    margin: 0;
+    padding: 50px;
+}
+
+@media (max-width: 575.98px) {
+    section {
+        padding: 30px;
+    }
+
+    .fixed-top {
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    #about {
+        padding-top: 40px !important;
+    }
+
+    .phone {
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 0 !important;
+        top: unset !important;
+    }
+
+    .animated {
+        border-radius: 10px 10px 0 0 !important;
+    }
+}
+
+#about {
+    padding-top: 150px;
+}
+.imgAbout .bas{
+    width: 100%;
+    height: auto;
+    padding-right: 40px;
+}
+.imgAbout .logo{
+ width: 12%;
+    height: auto;
+    position: absolute;
+    left: 7%;
+    top: 5%;
+}
+section:nth-of-type(2n) {
+    background-color: rgba(255, 255, 255, 0.25);
+
+}
+
+/*section:last-of-type {*/
+/*    height: 100vh;*/
+/*}*/
+
+.section_country {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 40px 30px;
+    margin-top: 10px;
+    box-shadow: 0 0 18px 2px rgba(0, 0, 0, .15);
+/*margin-bottom: 30px;*/
+}
+.section_country>div{
+    position: relative;
+}
+.active {
+    /*color: lime;*/
+    font-weight: 600;
+}
+
+.country {
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    font-weight: 600;
+    padding: 0;
+    list-style-type: disclosure-closed;
+}
+
+.country_list {
+    /*list-style-type: disclosure-closed;*/
+    display: inline-flex;
+    padding: 5px 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/*##########################*/
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    /*    text-align: center;*/
+    /*    font-size: 18px;*/
+    /*background: cornflowerblue;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    height: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover;*/
+    padding: 40px;
+}
+
+.client-item {
+
+    box-shadow: 0 0 18px 2px rgba(0, 0, 0, .15);
+    margin: 20px;
+    border-radius: 5px;
+    height: 170px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*##########################*/
+.phone {
+    position: fixed;
+    z-index: 2;
+    right: 20px;
+    top: 40px;
+
+}
+
+
+.animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    text-align: center;
+    margin-top: 56px;
+    padding: 15px 30px;
+    background: #347fc3;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 18px 2px rgba(0, 0, 0, .15);
+}
+
+.animated a {
+    text-decoration: none;
+    color: white;
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+}
+
+
+/*###################################*/
+
+.slideCity {
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+}
+
+.slideCity:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+    z-index: 2;
+    bottom: -100%;
+    left: 0;
+}
+
+.slideCity:hover:before {
+    bottom: 0;
+}
+
+.textSlide {
+    position: absolute;
+    color: #fff;
+    z-index: 2;
+    width: 100%;
+    transition: opacity 0.3s, transform 0.2s;
+    opacity: 0;
+}
+
+.slideCity:hover > .textSlide {
+    bottom: 40px;
+    transform: translate3d(0, 20px, 0);
+    opacity: 1;
+}
+
+.swiper-horizontal>.swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
+    position: relative;
+    left: unset;
+    /* bottom: var(--swiper-scrollbar-bottom,4px); */
+    top: 0;
+    z-index: 50;
+    height: var(--swiper-scrollbar-size,4px);
+     width: 100% !important;
+    margin-bottom: 8px;
+}
+
+
+
+
+#Czechia>div>div>div>.slideCity:nth-child(1) {
+    background: url("img/ostrava.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+
+#Czechia>div>div>div>.slideCity:nth-child(2) {
+    background: url("img/olomouc.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Czechia>div>div>div>.slideCity:nth-child(3) {
+    background: url("img/Brno.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Czechia>div>div>div>.slideCity:nth-child(4) {
+    background: url("img/Jihlava.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Czechia>div>div>div>.slideCity:nth-child(5) {
+    background: url("img/Humpolec.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Czechia>div>div>div>.slideCity:nth-child(6) {
+    background: url("img/Praha.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Czechia>div>div>div>.slideCity:nth-child(7) {
+    background: url("img/Plzen.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Czechia>div>div>div>.slideCity:nth-child(8) {
+    background: url("img/Praha.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+
+
+
+#Netherlands>div>div>div>.slideCity:nth-child(1) {
+    background: url("img/ostrava.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+
+#Netherlands>div>div>div>.slideCity:nth-child(2) {
+    background: url("img/olomouc.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Netherlands>div>div>div>.slideCity:nth-child(3) {
+    background: url("img/Brno.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Netherlands>div>div>div>.slideCity:nth-child(4) {
+    background: url("img/Jihlava.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Netherlands>div>div>div>.slideCity:nth-child(5) {
+    background: url("img/Humpolec.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Netherlands>div>div>div>.slideCity:nth-child(6) {
+    background: url("img/Praha.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Netherlands>div>div>div>.slideCity:nth-child(7) {
+    background: url("img/Plzen.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Netherlands>div>div>div>.slideCity:nth-child(8) {
+    background: url("img/Praha.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+
+
+
+#Austria>div>div>div>.slideCity:nth-child(1) {
+    background: url("img/ostrava.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+
+#Austria>div>div>div>.slideCity:nth-child(2) {
+    background: url("img/olomouc.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Austria>div>div>div>.slideCity:nth-child(3) {
+    background: url("img/Brno.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Austria>div>div>div>.slideCity:nth-child(4) {
+    background: url("img/Jihlava.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Austria>div>div>div>.slideCity:nth-child(5) {
+    background: url("img/Humpolec.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Austria>div>div>div>.slideCity:nth-child(6) {
+    background: url("img/Praha.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Austria>div>div>div>.slideCity:nth-child(7) {
+    background: url("img/Plzen.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+#Austria>div>div>div>.slideCity:nth-child(8) {
+    background: url("img/Praha.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+
