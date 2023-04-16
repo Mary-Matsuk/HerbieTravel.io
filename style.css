@@ -138,6 +138,8 @@ section {
 }
     .navbar-collapse{
         padding-top: 20px;
+        height: 160px;
+    overflow-y: auto;
     }
 .dropdown-menu {
     display: none !important;
