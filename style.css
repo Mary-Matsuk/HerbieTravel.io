@@ -150,6 +150,10 @@ section {
     .country_list {
         display: list-item !important;
     }
+    .textAbout {
+        padding-top: 30px;
+    }
+
 }
 #about {
     padding-top: 150px;
