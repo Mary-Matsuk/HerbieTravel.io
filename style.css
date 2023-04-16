@@ -156,11 +156,10 @@ section {
 .textSlide {
     position: fixed;
     color: #fff;
-
     left: 50%;
     transform: translate(-50%);
     bottom: 10px !important;
-     background: rgb(13 18 42 / 80%);
+     background-color: rgba(0, 0, 0, 0.25);
     display: block;
     width: 100%;
     padding: 5px;
