@@ -153,7 +153,18 @@ section {
     .textAbout {
         padding-top: 30px;
     }
+.textSlide {
+    position: fixed;
+    color: #fff;
 
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10px !important;
+     background: rgb(13 18 42 / 80%);
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
 }
 #about {
     padding-top: 150px;
